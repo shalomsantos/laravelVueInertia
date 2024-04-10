@@ -11,6 +11,7 @@
                     <a class="text-decoration-underline text-white" href="#">Crie uma agora</a>
                 </div>
             </v-sheet>
+            
         </v-card>
     </v-sheet>
 </template>
