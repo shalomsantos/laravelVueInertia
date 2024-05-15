@@ -1,8 +1,10 @@
 import './bootstrap'
 import '../css/app.css'
+import 'primevue/resources/themes/aura-light-green/theme.css'
 // import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
 import { createApp, h } from 'vue'
+import PrimeVue from 'primevue/config';
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
@@ -24,6 +26,7 @@ createInertiaApp({
             .use(plugin)
             .use(ZiggyVue)
             .use(vuetify)
+            .use(PrimeVue)
             .mount(el);
     },
     progress: {

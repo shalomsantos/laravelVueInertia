@@ -10,7 +10,7 @@ use Inertia\Inertia;
 // })->middleware(['auth', 'verified']);
 
 Route::get('/', function () {
-    return Inertia::render('Index');
+    return Inertia::render('Home');
 });
 
 Route::get('/login', function () {

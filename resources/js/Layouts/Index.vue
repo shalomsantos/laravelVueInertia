@@ -1,10 +1,10 @@
 
 <template>
-    <v-app id="inspire">
+    <v-app>
         <v-navigation-drawer v-model="drawer" class="bg-blue-grey-darken-1">
             <v-list-item
-                prepend-avatar="https://randomuser.me/api/portraits/men/78.jpg"
-                title="John Leider"
+                prepend-avatar="./perfil.jpeg"
+                title="admin admin"
             ></v-list-item>
 
             <v-divider></v-divider>
@@ -21,14 +21,12 @@
             </v-app-bar-nav-icon>
 
             <v-app-bar-title>
-                <i class="fa-solid fa-b"></i>
-                <i class="fa-solid fa-z"></i>
-                 - Base Zero
+                Sistema de precificação
             </v-app-bar-title>
         </v-app-bar>
 
-        <v-main class="bg-grey-lighten-3">
-            <!--  -->
+        <v-main class="main bg-grey-lighten-3">
+            <slot/>
         </v-main>
     </v-app>
 </template>
@@ -36,7 +34,13 @@
 <script setup>
 import {ref} from 'vue';
 
-const drawer = ref(true);
+const drawer = ref(false);
 </script>
+
+<style scoped>
+.main{
+    padding: 5rem 1rem 1rem 1rem;
+}
+</style>
 
 
